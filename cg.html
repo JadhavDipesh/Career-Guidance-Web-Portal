@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Career Guidance</title>
+<link rel = "stylesheet" type="text/css" href = "cg.css">	
+</head>
+
+
+<body style="background-color:white">
+<div class="topnav">
+<a class="active" href="#home">Home</a>
+	<a button="about.html" href="Aboutus/about.html">About Us</a>
+	<a button="tour.html" href="tour.html" align="right">Take a tour</a>
+	
+	<div class="dropdown">
+    <button class="dropbtn">After X<sup>th</sup> <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+      <a href="Science/p.html">Science</a>
+      <a href="Commerce/p.html">Commerce</a>
+      <a href="artsss/p.html">Arts</a>
+	  <a href="Diploma/p.html">Diploma</a>
+	  <a href="ITI/iti.html">ITI</a>
+	<!--<input type="text" placeholder="Search..">-->
+	</div>
+	</div>
+	</div>
+	<div id="logo">
+	<img src="ubalogo.png" width="225" height="225" align="left"></div>
+	
+
+<BR><BR><BR><BR><BR>
+<h2 align="left"><br><br><br><br><br><br>&nbsp;"Dreams are extremely important. <br>You can't do it unless you imagine it." </h2>
+
+<div  id= "img_id">
+  <img class="mySlides" src="back1.jpeg" >
+  <img class="mySlides" src="back2.png" >
+  <img class="mySlides" src="back.jpeg" >
+</div>
+
+
+	
+<!--<div class="image"></div>
+<div class="heading">
+<h1 align="right">CAREER GUIDANCE</h1>
+</div>
+<div class="color"></div>-->
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+</body>
+</html>
